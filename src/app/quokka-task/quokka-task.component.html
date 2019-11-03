@@ -1,0 +1,11 @@
+<h1>Quokka</h1>
+<br />
+
+<p>{{ QTask }}</p>
+<br />
+<p>{{ QHashtag }}</p>
+
+<button *ngIf="isTaskValidate === false" class="btn btn-success"
+              (click)="validateTask()">Accept</button>
+<button *ngIf="isTaskValidate === false" class="btn btn-danger"
+              (click)="cancelTask()">Refuse</button>
