@@ -1,0 +1,32 @@
+/*body {
+    background-color: #161F3C;
+}*/
+
+#btn_start {
+    animation:5s ease 0s normal forwards 1 fadein;
+    -webkit-animation:5s ease 0s normal forwards 1 fadein;
+    opacity:1;
+
+    margin-top: 15%;
+}
+
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+@-webkit-keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*p {
+    font-family: 'Montserrat', sans-serif;
+}*/

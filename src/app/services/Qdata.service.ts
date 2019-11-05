@@ -1,10 +1,11 @@
 export class QDataService {
 
+    quokkaBgColor = "#161F3C";
+
     quokkaQuoteStart = [
         {
             text : "Hi there I'm Quokka and I'm here to give your break a shake."
         },
-
         {
             text : 'amazing dude !'
         }
@@ -12,11 +13,29 @@ export class QDataService {
 
     quokkaQuote = [
         {
-            text : "amazing !"
+            text : "Amazing !"
         },
         {
             text : "Yolo !"
-        }
+        },
+        {
+            text : "Amazing !"
+        },
+        {
+            text : "Hope you will enjoy !"
+        },
+        {
+            text : "Plop PLop !"
+        },
+        {
+            text : "Searching..."
+        },
+        {
+            text : "Be patient dude.."
+        },
+        {
+            text : "Chop Chop !"
+        },
     ];
 
     quokkaTask = [

@@ -1,11 +1,31 @@
-<h1>Quokka</h1>
+<h2 id="heure">{{ QDate | date: 'shortTime'}}</h2>
+<h1 id="date">{{ QDate | date: 'mediumDate'}}</h1>
+<br /><br />
+<p id="task">{{ QTask }}</p>
 <br />
+<p id="htag">{{ QHashtag }}</p>
 
-<p>{{ QTask }}</p>
 <br />
-<p>{{ QHashtag }}</p>
-
-<button *ngIf="isTaskValidate === false" class="btn btn-success"
-              (click)="validateTask()">Accept</button>
-<button *ngIf="isTaskValidate === false" class="btn btn-danger"
-              (click)="cancelTask()">Refuse</button>
+<div *ngIf="isTaskValidate === false" class="row">
+        <div class="col-4">
+                <svg class="cross" (click)="validateTask()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.01 121.52">
+                    <title></title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path d="M62,0C27.76,0,0,27.2,0,60.76s27.76,60.76,62,60.76,62-27.21,62-60.76S96.25,0,62,0ZM53.77,82.77l-.11-.11-.1.11L32.27,61.48l4-4L53.66,74.83,91.34,37.16l4,4Z"/>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4">
+                <svg class="cross" (click)="cancelTask()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.01 121.52">
+                    <title></title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path d="M62,0C27.76,0,0,27.2,0,60.76s27.76,60.76,62,60.76,62-27.21,62-60.76S96.25,0,62,0ZM88.13,82.64l-4.25,4.24L62,65,40.13,86.88l-4.25-4.24L57.76,60.76,35.88,38.88l4.25-4.24L62,56.52,83.88,34.64l4.25,4.24L66.25,60.76Z"/>
+                        </g>
+                    </g>
+                </svg> 
+        </div>
+</div>

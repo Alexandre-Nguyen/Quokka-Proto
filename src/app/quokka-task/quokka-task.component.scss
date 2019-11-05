@@ -1,0 +1,45 @@
+#task {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+#htag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+}
+
+.QuokkaTitle {
+    height: 30px;
+    width: 150px;
+    fill: white;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+#date {
+    position: relative;
+    vertical-align: text-top;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#heure {
+    position: relative;
+    vertical-align: text-top;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+}

@@ -16,6 +16,7 @@ export class QuokkaTaskComponent implements OnInit {
   TaskIndex : number;
   TaskCounter : number;
   isTaskValidate : boolean;
+  QDate = new Date();
 
   constructor(private qDataService : QDataService, private routes : Router) {
   }
