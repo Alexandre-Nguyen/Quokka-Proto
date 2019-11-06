@@ -6,12 +6,30 @@
     color: white;
 }
 
+#talk {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 100;
+    color: #151515;
+}
+
 #htag {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     text-align: center;
     font-weight: 100;
     color: white;
+}
+
+#logo {
+    //position: absolute;
+    //bottom: 350px;
+    display: block;
+    margin: 0 auto;
+    left: 47%;
+    height: 69px;
+    width: 73px;
 }
 
 .QuokkaTitle {

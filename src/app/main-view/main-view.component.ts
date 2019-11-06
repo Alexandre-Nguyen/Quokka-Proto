@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { QDataService } from '../services/Qdata.service'
 import { Router } from '@angular/router'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-main-view',
@@ -26,6 +27,7 @@ export class MainViewComponent implements OnInit {
     this.QTextTabQuote = this.qDataService.quokkaQuote;
 
     this.Qtext = this.QTextTabStart[this.TextIndex].text;
+    $("body").css({"background-color" : "#F5F5F5"});
   }
 
   onNext() {
@@ -34,8 +36,8 @@ export class MainViewComponent implements OnInit {
       this.Qtext = this.QTextTabStart[this.TextIndex].text;
     }
     else {
+      $("body").css({"background-color" : "#152345"});
       this.routes.navigate(['loading']);
     }
   }
-
 }

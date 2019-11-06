@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { QDataService } from '../services/Qdata.service'
 import { Router } from '@angular/router'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-quokka-task',
@@ -17,6 +18,8 @@ export class QuokkaTaskComponent implements OnInit {
   TaskCounter : number;
   isTaskValidate : boolean;
   QDate = new Date();
+  QMainColor : string;
+  QSdColor : string;
 
   constructor(private qDataService : QDataService, private routes : Router) {
   }
@@ -26,7 +29,47 @@ export class QuokkaTaskComponent implements OnInit {
     this.TaskIndex = Math.floor(Math.random() * (this.QTaskTab.length));
     this.QTask = this.QTaskTab[this.TaskIndex].title;
     this.QHashtag = this.QTaskTab[this.TaskIndex].hashtag;
-    
+    this.setColor(this.QTaskTab[this.TaskIndex].category);
+    $("body").css({"background-color" : this.QMainColor});
+    //console.log("col--->" + this.QSdColor);
+    //console.log(this.getTextTaskColor());
+    //$("#task").css({"color": this.QSdColor});
+    //$("#htag").css({"color": this.QSdColor});
+  }
+
+  setColor(cat){
+    switch(cat) {
+      case "refresh": {
+        this.QMainColor = this.qDataService.quokkaBgColorTab[0].mainColor;
+        this.QSdColor = this.qDataService.quokkaBgColorTab[0].sdColor;
+        break;
+      }
+      case "Betacoffee": {
+        this.QMainColor = this.qDataService.quokkaBgColorTab[1].mainColor;
+        this.QSdColor = this.qDataService.quokkaBgColorTab[1].sdColor;
+        break;
+      }
+      case "share": {
+        this.QMainColor = this.qDataService.quokkaBgColorTab[2].mainColor;
+        this.QSdColor = this.qDataService.quokkaBgColorTab[2].sdColor;
+        break;
+      }
+      case "create": {
+        this.QMainColor = this.qDataService.quokkaBgColorTab[3].mainColor;
+        this.QSdColor = this.qDataService.quokkaBgColorTab[3].sdColor;
+        break;
+      }
+      case "inspire": {
+        this.QMainColor = this.qDataService.quokkaBgColorTab[4].mainColor;
+        this.QSdColor = this.qDataService.quokkaBgColorTab[4].sdColor;
+        break;
+      }
+      case "play": {
+        this.QMainColor = this.qDataService.quokkaBgColorTab[5].mainColor;
+        this.QSdColor = this.qDataService.quokkaBgColorTab[5].sdColor;
+        break;
+      }
+    }
   }
 
   ngOnInit() {
@@ -36,13 +79,21 @@ export class QuokkaTaskComponent implements OnInit {
     this.TaskIndex = Math.floor(Math.random() * (this.QTaskTab.length));
     this.QTask = this.QTaskTab[this.TaskIndex].title;
     this.QHashtag = this.QTaskTab[this.TaskIndex].hashtag;
+    this.setColor(this.QTaskTab[this.TaskIndex].category);
+
+    $("body").css({"background-color" : this.QMainColor});
+  }
+
+  getTextTaskColor(){
+    return (this.QSdColor);
   }
 
   validateTask() {
+    $("body").css({"background-color" : "#F5F5F5"});
     this.isTaskValidate = true;
     this.QTask = "Challenge accepted, good luck pal ! See you during your next break ! ";
     this.QHashtag = "";
-    setTimeout(() => { this.routes.navigate(['']); }, 3000);
+    setTimeout(() => { this.routes.navigate(['']); }, 7000);
   }
 
   cancelTask(){
@@ -51,10 +102,11 @@ export class QuokkaTaskComponent implements OnInit {
       this.TaskCounter++;
     }
     else {
+      $("body").css({"background-color" : "#F5F5F5"});
       this.isTaskValidate = true;
       this.QHashtag = "";
       this.QTask = "I will find you a better task next time, see you for the next break.";
-      setTimeout(() => { this.routes.navigate(['']); }, 3000);
+      setTimeout(() => { this.routes.navigate(['']); }, 7000);
     }
   }
 }

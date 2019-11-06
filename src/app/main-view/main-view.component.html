@@ -1,14 +1,14 @@
 <div class="row h-25">
     <div class="col">
-        <br />
+        <br /><br />
         <img id="logo" src="../../assets/logo_redHOME.png">
     </div>
 </div>
 <div class="row align-items-center h-50">
     <div class="col-sm-12 my-auto">
-        <p>{{ Qtext }}</p>
+        <p [ngStyle]="{'color': '#151515'}">{{ Qtext }}</p>
 
-        <svg class="cross2" (click)="onNext()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76">
+        <svg class="cross2" [ngStyle]="{'fill': '#151515'}" (click)="onNext()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76">
             <title></title>
             <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_1-2" data-name="Layer 1">

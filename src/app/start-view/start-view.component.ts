@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { QDataService } from '../services/Qdata.service'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-start-view',
@@ -14,7 +15,8 @@ export class StartViewComponent implements OnInit {
   constructor(private qDataService : QDataService, private routes : Router) { }
 
   ngOnInit() {
-    this.bgQuokka = this.qDataService.quokkaBgColor = "000000";
+    $("body").css({"background-color" : "#152345"});
+    //this.bgQuokka = this.qDataService.quokkaBgColor = "000000";
   }
 
   onStart() {

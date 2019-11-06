@@ -1,22 +1,31 @@
 <div class="row h-25">
-    <div class="col">
+
+    <div *ngIf="isTaskValidate === true" class="col">
+        <br /><br />
+        <img id="logo" src="../../assets/logo_redHOME.png">
+    </div>
+
+    <div *ngIf="isTaskValidate === false" class="col">
         <br />
-        <h2 *ngIf="isTaskValidate === false" class="fixed-top" id="heure" style="text-align: center;">{{ QDate | date: 'shortTime'}}</h2>
+        <h2 *ngIf="isTaskValidate === false" [ngStyle]="{'color': getTextTaskColor()}"
+            class="fixed-top" id="heure" style="text-align: center;">{{ QDate | date: 'shortTime'}}</h2>
     
-        <h1 *ngIf="isTaskValidate === false" class="fixed-top" id="date" style="text-align: center;">{{ QDate | date: 'mediumDate'}}</h1>
+        <h1 *ngIf="isTaskValidate === false" [ngStyle]="{'color': getTextTaskColor()}"
+            class="fixed-top" id="date" style="text-align: center;">{{ QDate | date: 'mediumDate'}}</h1>
     </div>
 </div>
 
 <div class="row align-items-center h-50">
     <div class="col-sm-12 my-auto">
-        <p id="task">{{ QTask }}</p>
+        <p *ngIf="isTaskValidate === false" id="task" [ngStyle]="{'color': getTextTaskColor()}">{{ QTask }}</p>
+        <p *ngIf="isTaskValidate === true" id="talk">{{ QTask }}</p>
         <br />
-        <p id="htag">{{ QHashtag }}</p>
+        <p *ngIf="isTaskValidate === false" id="htag" [ngStyle]="{'color': getTextTaskColor()}">{{ QHashtag }}</p>
         <br />
         <div *ngIf="isTaskValidate === false" class="row">
                 <div class="col-3"></div>
                 <div class="col-2">
-                        <svg class="cross" (click)="cancelTask()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.01 121.52">
+                        <svg class="cross" [ngStyle]="{'fill': getTextTaskColor()}" (click)="cancelTask()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.01 121.52">
                             <title></title>
                             <g id="Layer_2" data-name="Layer 2">
                                 <g id="Layer_1-2" data-name="Layer 1">
@@ -27,7 +36,7 @@
                 </div>
                 <div class="col-2"></div>
                 <div class="col-2">
-                        <svg class="cross" (click)="validateTask()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.01 121.52">
+                        <svg class="cross" [ngStyle]="{'fill': getTextTaskColor()}" (click)="validateTask()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.01 121.52">
                             <title></title>
                             <g id="Layer_2" data-name="Layer 2">
                                 <g id="Layer_1-2" data-name="Layer 1">
@@ -42,7 +51,7 @@
 </div>
 <div class="row h-25"></div>
 
-<svg class="QuokkaTitle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.93 9">
+<svg class="QuokkaTitle" [ngStyle]="{'fill': getTextTaskColor()}" *ngIf="isTaskValidate === false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.93 9">
     <title></title>
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">

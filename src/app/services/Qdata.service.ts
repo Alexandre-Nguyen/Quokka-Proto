@@ -1,6 +1,31 @@
 export class QDataService {
 
-    quokkaBgColor = "#161F3C";
+    quokkaBgColorTab = [ 
+        { 
+            mainColor : "#161F3C",
+            sdColor: "#FFFFFF"
+        },
+        { 
+            mainColor : "#00E0E0",
+            sdColor: "#FFFFFF"
+        },
+        { 
+            mainColor : "#B3002D",
+            sdColor: "#FFFFFF"
+        },
+        { 
+            mainColor : "#6BFF26",
+            sdColor: "#000000"
+        },
+        { 
+            mainColor : "#FFC226",
+            sdColor: "#000000"
+        },
+        { 
+            mainColor : "#0021C4",
+            sdColor: "#FFFFFF"
+        },
+    ];
 
     quokkaQuoteStart = [
         {
