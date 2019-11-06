@@ -18,6 +18,7 @@ export class StartViewComponent implements OnInit {
   }
 
   onStart() {
-    setTimeout(() => { this.routes.navigate(['talk']); }, 2000);
+    this.routes.navigate(['talk']);
+    //setTimeout(() => { this.routes.navigate(['talk']); }, 2000);
   }
 }
