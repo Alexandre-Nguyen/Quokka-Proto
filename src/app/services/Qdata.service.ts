@@ -2,61 +2,46 @@ export class QDataService {
 
     quokkaBgColorTab = [ 
         { 
-            mainColor : "#161F3C",
-            sdColor: "#FFFFFF"
+            mainColor : "#0B4672",
+            sdColor: "#FF5B5B"
         },
         { 
-            mainColor : "#00E0E0",
-            sdColor: "#FFFFFF"
+            mainColor : "#F9BA34",
+            sdColor: "#2F3249"
         },
         { 
-            mainColor : "#B3002D",
-            sdColor: "#FFFFFF"
+            mainColor : "#153B4F",
+            sdColor: "#1AFED4"
         },
         { 
-            mainColor : "#6BFF26",
-            sdColor: "#000000"
+            mainColor : "#A4D3FF",
+            sdColor: "#5C33BA"
         },
         { 
-            mainColor : "#FFC226",
-            sdColor: "#000000"
+            mainColor : "#2BF1D3",
+            sdColor: "#115BB1"
         },
         { 
-            mainColor : "#0021C4",
-            sdColor: "#FFFFFF"
+            mainColor : "#F63376",
+            sdColor: "#E5E5E5"
         },
     ];
 
     quokkaQuoteStart = [
         {
-            text : "Hi there I'm Quokka and I'm here to give your break a shake."
-        },
-        {
-            text : 'amazing dude !'
+            text : "Hi there, I'm Quokka and I'm here to give your break a shake."
         }
     ];
 
     quokkaQuote = [
         {
-            text : "Amazing !"
+            text : "Are you reaaaady?"
         },
         {
-            text : "Yolo !"
+            text : "Getting ready for your break"
         },
         {
-            text : "Amazing !"
-        },
-        {
-            text : "Hope you will enjoy !"
-        },
-        {
-            text : "Plop PLop !"
-        },
-        {
-            text : "Searching..."
-        },
-        {
-            text : "Be patient dude.."
+            text : "Creating an awesome break"
         },
         {
             text : "Chop Chop !"
@@ -65,144 +50,204 @@ export class QDataService {
 
     quokkaTask = [
         {
-            title : 'Play tictactoe with someone queueing at the coffee machine',
-            hashtag : '#BETACOFFEE',
-            category : 'Betacoffee'
+            title : 'Give a hug to someone you like',
+            hashtag : '#MOOVEYOUR',
+            category : 'PhysicalActivity'
         },
         {
-            title : 'Play rock-paper-scissors with someone queueing at the coffee machine',
-            hashtag : '#BETACOFFEE',
-            category : 'Betacoffee'
+            title : 'Walk up and down a few flights of stairs',
+            hashtag : '#MOOVEYOUR',
+            category : 'PhysicalActivity'
         },
         {
-            title : 'Play Ni oui ni non with the next person you meet',
-            hashtag : '#BETACOFFEE',
-            category : 'Betacoffee'
+            title : 'Organize the next football match ',
+            hashtag : '#MOOVEYOUR',
+            category : 'PhysicalActivity'
+        },
+        {
+            title : 'Go outside for a 5 minutes walk ',
+            hashtag : '#MOOVEYOUR',
+            category : 'PhysicalActivity'
         },
         {
             title : 'Challenge a co-worker to a chair race',
-            hashtag : '#BETACOFFEE',
-            category : 'Betacoffee'
+            hashtag : '#MOOVEYOUR',
+            category : 'PhysicalActivity'
         },
         {
-            title : 'Take a deap breath',
-            hashtag : '#REFRESH',
-            category : 'refresh'
+            title : "Giggle like it’s your birthday",
+            hashtag : '#MOOVEYOUR',
+            category : 'PhysicalActivity'
+        },
+
+        {
+            title : 'Did you know that all oysters are born male and have the ability to change sex according to their will?',
+            hashtag : '#DIDYOUKNOW',
+            category : 'LearningSthingNew'
         },
         {
-            title : 'Close your eyes and imagine that you are in a forest',
-            hashtag : '#REFRESH',
-            category : 'refresh'
+            title : 'Did you know that Starfish can re-grow their arms?',
+            hashtag : '#DIDYOUKNOW',
+            category : 'LearningSthingNew'
         },
         {
-            title : 'Do a yoga pose',
-            hashtag : '#REFRESH',
-            category : 'refresh'
+            title : 'Did you know that Pteronophobia is the fear of being tickled by feathers?',
+            hashtag : '#DIDYOUKNOW',
+            category : 'LearningSthingNew'
         },
+        {
+            title : 'Did you know that the oldest "your mom" joke was discovered on a 3,500 year old Babylonian tablet?',
+            hashtag : '#DIDYOUKNOW',
+            category : 'LearningSthingNew'
+        },
+        {
+            title : 'Did you know there are over 6,000 languages spoken in the world today',
+            hashtag : '#DIDYOUKNOW',
+            category : 'LearningSthingNew'
+        },
+
+        {
+            title : 'Play rock-paper-scissors with someone queueing at the coffee machine',
+            hashtag : '#BETACOFFE',
+            category : 'PlayingAGame'
+        },
+        {
+            title : 'Find a word and make someone guessing it',
+            hashtag : '#BETACOFFE',
+            category : 'PlayingAGame'
+        },
+        {
+            title : 'Guess the numeric sequence 2 3 _  13 choosing between 6 7 10 11',
+            hashtag : '#BETACOFFE',
+            category : 'PlayingAGame'
+        },
+        {
+            title : 'Spot a habit',
+            hashtag : '#BETACOFFE',
+            category : 'PlayingAGame'
+        },
+        {
+            title : 'Play Tic Tac Toe with someone queueing at the coffee machine',
+            hashtag : '#BETACOFFE',
+            category : 'PlayingAGame'
+        },
+
         {
             title : 'Go outside and feel the fresh air',
             hashtag : '#REFRESH',
-            category : 'refresh'
-        },
-        {
-            title : 'Head outside and walk two laps around your block or building',
-            hashtag : '#REFRESH',
-            category : 'refresh'
-        },
-        {
-            title : 'Read a few pages of your book',
-            hashtag : '#REFRESH',
-            category : 'refresh'
-        },
-        {
-            title : 'Listen to Om Mani Padme Hum mantra on youtube for 5 minutes',
-            hashtag : '#REFRESH',
-            category : 'refresh'
-        },
-        {
-            title : 'Organize your smartphone deleting pictures, apps you do not need anymore',
-            hashtag : '#REFRESH',
-            category : 'refresh'
-        },
-        {
-            title : "Change your smartphone's background",
-            hashtag : '#REFRESH',
-            category : 'refresh'
+            category : 'Meditation'
         },
         {
             title : 'Do nothing for as long as possible',
             hashtag : '#REFRESH',
-            category : 'refresh'
+            category : 'Meditation'
+        },
+        {
+            title : 'Listen to Om Mani Padme Hum mantra on youtube for 5 minutes',
+            hashtag : '#REFRESH',
+            category : 'Meditation'
         },
         {
             title : 'Drink a glass of water',
             hashtag : '#REFRESH',
-            category : 'refresh'
+            category : 'Meditation'
         },
         {
-            title : "Pass water on your face",
+            title : 'Unlace your shoes',
             hashtag : '#REFRESH',
-            category : 'refresh'
+            category : 'Meditation'
         },
         {
-            title : "Ask the person next to you abour their favourate singer",
-            hashtag : '#SHARE',
-            category : 'share'
+            title : "Change your smartphone's background",
+            hashtag : '#REFRESH',
+            category : 'Meditation'
         },
         {
-            title : "Ask the person next to you abour the last singer they listened to",
-            hashtag : '#SHARE',
-            category : 'share'
+            title : 'Take three big breaths',
+            hashtag : '#REFRESH',
+            category : 'Meditation'
         },
         {
-            title : "Start to draw from a circle",
-            hashtag : '#CREATE',
-            category : 'create'
+            title : 'Stretch your arms and legs',
+            hashtag : '#REFRESH',
+            category : 'Meditation'
         },
         {
-            title : "Start to draw from a triangle",
-            hashtag : '#CREATE',
-            category : 'create'
+            title : 'Stretch your back and shoulders',
+            hashtag : '#REFRESH',
+            category : 'Meditation'
         },
         {
-            title : "Start to draw from a smiley face",
-            hashtag : '#CREATE',
-            category : 'create'
+            title : 'Stretch your hands and foot',
+            hashtag : '#REFRESH',
+            category : 'Meditation'
         },
         {
-            title : "Think with the next person in queue about solutions to consume less packaging",
-            hashtag : '#INSPIRE',
-            category : 'inspire'
+            title : 'What about tea instead of coffee?',
+            hashtag : '#REFRESH',
+            category : 'Meditation'
+        },
+
+        {
+            title : 'Think with the next person in queue about solutions to consume less packaging',
+            hashtag : '#TALKTO',
+            category : 'HelpAndInteract'
         },
         {
-            title : "Think with the next person in queue about the latest concert they have been to",
-            hashtag : '#INSPIRE',
-            category : 'inspire'
+            title : 'Share the last fun fact you learn to someone',
+            hashtag : '#TALKTO',
+            category : 'HelpAndInteract'
         },
         {
-            title : "Share the last fun fact you learn to someone",
-            hashtag : '#INSPIRE',
-            category : 'inspire'
+            title : 'Wish someone a good day',
+            hashtag : '#TALKTO',
+            category : 'HelpAndInteract'
         },
         {
-            title : "Play Pictionary with the person next to you",
-            hashtag : '#PLAY',
-            category : 'play'
+            title : 'Ask the person next to you about his/her worst nightmare',
+            hashtag : '#TALKTO',
+            category : 'HelpAndInteract'
         },
         {
-            title : "Bet on the next football game score",
-            hashtag : '#PLAY',
-            category : 'play'
+            title : 'Call one of your family members to say hi',
+            hashtag : '#TALKTO',
+            category : 'HelpAndInteract'
         },
         {
-            title : "Create a charade and tell it to your colleagues",
-            hashtag : '#PLAY',
-            category : 'play'
+            title : 'Ask a co-worker about the latest concert they have been to',
+            hashtag : '#TALKTO',
+            category : 'HelpAndInteract'
         },
         {
-            title : "Play The Laughing Game with your colleagues",
-            hashtag : '#PLAY',
-            category : 'play'
+            title : 'Propose a colleague to have lunch together next week',
+            hashtag : '#TALKTO',
+            category : 'HelpAndInteract'
+        },
+
+        {
+            title : 'What if you take a different path going home today ?',
+            hashtag : '#WHATIF?',
+            category : 'SetNewGoal'
+        },
+        {
+            title : 'Draw a tree without removing your finger',
+            hashtag : '#WHATIF?',
+            category : 'SetNewGoal'
+        },
+        {
+            title : 'Can you remember your last dream?',
+            hashtag : '#WHATIF?',
+            category : 'SetNewGoal'
+        },
+        {
+            title : 'Maybe the person next to you have the answer to your question',
+            hashtag : '#WHATIF?',
+            category : 'SetNewGoal'
+        },
+        {
+            title : 'What could you do differently next time?',
+            hashtag : '#WHATIF?',
+            category : 'SetNewGoal'
         },
     ];
 }

@@ -39,32 +39,32 @@ export class QuokkaTaskComponent implements OnInit {
 
   setColor(cat){
     switch(cat) {
-      case "refresh": {
+      case "PhysicalActivity": {
         this.QMainColor = this.qDataService.quokkaBgColorTab[0].mainColor;
         this.QSdColor = this.qDataService.quokkaBgColorTab[0].sdColor;
         break;
       }
-      case "Betacoffee": {
+      case "LearningSthingNew": {
         this.QMainColor = this.qDataService.quokkaBgColorTab[1].mainColor;
         this.QSdColor = this.qDataService.quokkaBgColorTab[1].sdColor;
         break;
       }
-      case "share": {
+      case "PlayingAGame": {
         this.QMainColor = this.qDataService.quokkaBgColorTab[2].mainColor;
         this.QSdColor = this.qDataService.quokkaBgColorTab[2].sdColor;
         break;
       }
-      case "create": {
+      case "Meditation": {
         this.QMainColor = this.qDataService.quokkaBgColorTab[3].mainColor;
         this.QSdColor = this.qDataService.quokkaBgColorTab[3].sdColor;
         break;
       }
-      case "inspire": {
+      case "HelpAndInteract": {
         this.QMainColor = this.qDataService.quokkaBgColorTab[4].mainColor;
         this.QSdColor = this.qDataService.quokkaBgColorTab[4].sdColor;
         break;
       }
-      case "play": {
+      case "SetNewGoal": {
         this.QMainColor = this.qDataService.quokkaBgColorTab[5].mainColor;
         this.QSdColor = this.qDataService.quokkaBgColorTab[5].sdColor;
         break;
@@ -105,7 +105,7 @@ export class QuokkaTaskComponent implements OnInit {
       $("body").css({"background-color" : "#F5F5F5"});
       this.isTaskValidate = true;
       this.QHashtag = "";
-      this.QTask = "I will find you a better task next time, see you for the next break.";
+      this.QTask = "Sorry to see you go champ, next time we will find a challenge worthy of you";
       setTimeout(() => { this.routes.navigate(['']); }, 7000);
     }
   }
